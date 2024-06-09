@@ -1,0 +1,14 @@
+/*  Simple CSS for the main welcome header for the page. */
+
+body {
+    background-color: rgb(237, 247, 232);
+}
+
+.welcome {
+    background-color: rgb(160, 214, 178);
+    color: rgb(43, 136, 64);
+    padding: 0px, 20px, 0px, 20px;
+    text-align: center;
+    padding: 10px;
+
+}

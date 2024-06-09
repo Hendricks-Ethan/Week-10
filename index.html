@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Linking both Bootstrap and my css page. -->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Employment Manager</title>
+</head>
+<body>
+
+<!-- A simple heading for the webpage. -->    
+
+    <section>
+        <div class="welcome">
+            <h1>Welcome to your Employee Management Page!</h1>
+        </div>
+    </section>
+
+<!-- A section for the form. This includes the header for the form and all its rows of inputs. -->
+
+    <section class="container">
+
+        <br>
+
+        <div class="card">
+            <div class="card-header text-center">
+                This is where you will enter all the information for the new employee! 
+                Be sure you have ALL of their info before entering them into the system!
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="new-first-name" placeholder="First Name">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="new-middle-name" placeholder="Middle Name">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="new-last-name" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="new-street-address" placeholder="Street Address">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="new-city-address" placeholder="City">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="new-state-address" placeholder="State">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="new-zip-address" placeholder="Zip Code">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="new-position"></label>
+                        <input type="text" class="form-control" id="new-position" placeholder="Job Position">
+                    </div>
+                    <div class="col-sm">
+                        <label for="new-wage"></label>
+                        <input type="text" class="form-control" id="new-wage" placeholder="Starting Wage">
+                    </div>
+                    <div class="col-sm">
+                        <label for="new-hire-date">Hire Date</label>
+                        <input type="date" class="form-control" id="new-hire-date">
+                    </div>
+                    <div class="col-sm">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+
+<!-- The button to add all the information typed in. -->
+
+                <div class="row text-center">
+                    <div>
+                        <button class="btn btn-success" id="new-add-employee">Click to Add New Employee</button>
+                    </div>
+                </div>
+
+                <br>
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+<!-- The table for information of the new employees to be added. -->
+
+    <section class="container-fluid">
+        <table class="table table-bordered" id="employee-list">
+            <tr>
+                <th class="col-sm-2">Name</th>
+                <th class="col-sm-4">Address</th>
+                <th class="col-sm-2">Position</th>
+                <th class="col-sm-1">Wage</th>
+                <th class="col-sm-1">Hire Date</th>
+                <th class="col-sm-1">Start Date</th>
+                <th class="col-sm-1">End Employment</th>
+            </tr>
+        </table>
+    </section>
+
+<!-- Scripting in my js file and the Bootstrap js. -->
+    
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
